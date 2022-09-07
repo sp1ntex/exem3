@@ -1,0 +1,59 @@
+.touch--heading{
+    margin-top: 48px;
+    font-family: 'Ibarra Real Nova';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 42px;
+letter-spacing: -0.357143px;
+color: $main-bg-grayish-dark-blue;
+width: 100%;
+margin-right: 225px;
+}
+.touch{
+    margin-top: 103px;
+    margin-bottom: 48px;
+}
+.touch-wrapper{
+    border-top: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+}
+.touch__div{
+    width: 1110px;
+    &--text{
+        font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: $main-bg-grayish-dark-blue;
+mix-blend-mode: normal;
+opacity: 0.8;
+width: 635px;
+margin-top: 48px;
+padding-bottom: 24px;
+    }
+    &__list{
+        display: flex;
+        list-style-type: none;
+        &--item{
+            padding-right: 15px;
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .touch-wrapper{
+        border-top: 1px solid #000;
+        flex-direction: column;
+        margin-left: 39px;
+    }
+}
+@media only screen and (max-width:427px){
+    .touch__div--text{
+        width: 311px;
+    }
+    .touch-wrapper{
+        margin-left: 16px;
+    }
+}

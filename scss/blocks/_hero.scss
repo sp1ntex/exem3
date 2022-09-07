@@ -1,0 +1,105 @@
+.hero{
+    margin-top: 55px;
+    margin-bottom: 120px;
+    &--img{
+        position: relative;
+        width: 1110px;
+height: 600px;
+    }
+    &__content{
+        position: absolute;
+       top: 358px;
+background-color: $main-bg-alabaster;
+width: 445px;
+height: 357px;
+&--title{
+    font-family: 'Ibarra Real Nova';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 50px;
+letter-spacing: -0.446429px;
+color: $main-bg-grayish-dark-blue;
+}
+    }
+}
+
+.hero-link{
+    background-color:$main-bg-dark-blue;
+    width: 200px;
+    height: 48px;
+}
+.hero-link:hover{
+    background-color: $main-bg-desaturated-cyan;
+}
+.hero-link:active{
+    background-color: $main-bg-light-gray;
+}
+.hero-link-text{
+    text-decoration: none;
+    font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #FFFFFF;
+padding-left: 20px;
+padding-bottom: 15px;
+}
+
+.hero-link-icon-img{
+    padding-top: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.hero--img--768{
+    display: none;
+}
+.hero--img--427{
+    display: none;
+}
+.hero__content{
+    bottom: 30px;
+}
+@media only screen and (max-width:768px){
+    .hero--img--768{
+        display: inline-block;
+        position: relative;
+        margin-left: 40px;
+    }
+    .hero--img{
+        display: none;
+    }
+    .hero__content{
+        position: absolute;
+        bottom: 175px;
+        background-color: $main-bg-alabaster;
+        width: 514px;
+        height: 278px;
+        left: 40px;
+    }
+}
+.hero--img--427{
+    display: none;
+}
+@media only screen and (max-width:427px){
+    .hero--img--427{
+        display: inline-block;
+        margin-left: 36px;
+    }    
+    .hero--img{
+        display: none;
+        position: relative;
+    }
+    .hero--img--768{
+        display: none;
+    }
+    .hero__content{
+        position: absolute;
+        width: 311px;
+        bottom: 40px;
+    }
+}

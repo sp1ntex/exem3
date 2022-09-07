@@ -1,0 +1,91 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    &__ul{
+        display: flex;
+        &__li{
+            list-style-type: none;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-left: 42px;
+            &--link{
+                text-decoration: none;
+                color: $main-bg-grayish-dark-blue;
+                &:hover{
+                    color: $main-bg-desaturated-cyan;
+                    transition: all 0.3s ease;
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -ms-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+               }
+            }
+        }
+    }
+
+}
+
+.logo-menu{
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px){
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        &__ul{
+            display: flex;
+            &__li{
+                list-style-type: none;
+                font-family: 'Public Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin-left: 42px;
+                &--link{
+                    text-decoration: none;
+                    color: $main-bg-grayish-dark-blue;
+                    &:hover{
+                        color: $main-bg-desaturated-cyan;
+                        transition: all 0.3s ease;
+                        -webkit-transition: all 0.3s ease;
+                        -moz-transition: all 0.3s ease;
+                        -ms-transition: all 0.3s ease;
+                        -o-transition: all 0.3s ease;
+    }
+                }
+            }
+        }
+    }
+
+    .logo-menu{
+        display: none;
+    }
+    .nav{
+        margin-top: 64px;
+        padding: 0 40px;
+    }
+}
+@media only screen and (max-width:427px){
+    .nav{
+        margin-top: 32px;
+        padding: 0 40px;
+    }
+    .nav__ul{
+        display: none;
+    }
+    .logo-menu{
+        display: inline-block;
+    }
+}

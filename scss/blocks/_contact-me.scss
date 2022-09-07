@@ -1,0 +1,80 @@
+.contactme__wrapper h2 {
+    margin-top: 500px;
+    position: absolute;
+    position: absolute;
+    margin-top: -10px;
+height: 42px;
+font-family: 'Ibarra Real Nova';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 42px;
+letter-spacing: -0.357143px;
+}
+
+.contact-me{
+    margin-left: 200px;
+    border-top: 1px solid #000;
+    width: 1110px;
+    margin-bottom: 109px;
+    padding-top: 90px;
+}
+.contactme__input {
+    margin-left: 400px;
+    position: relative;
+}
+
+.contactme__input input {
+    border: none;
+    width: 630px;
+    height: 48px;
+background: rgb(235, 235, 236);
+mix-blend-mode: normal;
+
+}
+
+.contactme__input input::placeholder {
+color: rgb(131, 131, 131);
+font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 30px;
+padding: 20px;
+
+}
+
+.contactme__input input:hover {
+   border: #00ffc8;
+}
+@media only screen and (max-width: 768px){
+    .contactme__input {
+        margin-left: 0;
+        position: relative;
+    }
+    .contact-me{
+        top: 30px;
+        margin-left: 39px;
+        width: 689px;
+    }
+    .contactme__wrapper h2{
+        top: 700px;
+    }
+    .contact-me-submit{
+        margin-top: 20px;
+    }
+    
+}
+@media only screen and (max-width:427px){
+    .contactme__wrapper h2{
+        top: 830px;
+        left: 32px;
+    }
+    .contact-me{
+        margin-left: 30px;
+        width: 311px;
+    }
+    .contactme__input input{
+        width: 311px;
+    }
+}

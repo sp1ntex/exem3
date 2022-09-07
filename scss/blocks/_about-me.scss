@@ -1,0 +1,102 @@
+.about-us-wrapper{
+    display: flex;
+}
+.about-me{
+    margin-bottom: 150px;
+}
+.men-img-768{
+    display: none;
+}
+.men-img-427{
+    display: none;
+}
+.about-me__content{
+    width: 350px;
+    margin-left: 125px;
+    border-top: 1px solid $main-bg-grayish-dark-blue;
+    border-bottom: 1px solid $main-bg-grayish-dark-blue;
+    &--heading{
+        font-family: 'Ibarra Real Nova';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 42px;
+letter-spacing: -0.357143px;
+color: $main-bg-grayish-dark-blue;
+padding-bottom: 28px;
+padding-top: 50px;
+    }
+    &--text{
+        font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: $main-bg-grayish-dark-blue;
+mix-blend-mode: normal;
+opacity: 0.8;
+padding-bottom: 24px;
+    }
+    &--link{
+        text-decoration: none;
+        font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: $main-bg-grayish-dark-blue;
+border: 1px solid $main-bg-grayish-dark-blue;
+padding: 17px 36px;
+&:hover{
+    background: $main-bg-grayish-dark-blue;
+    color: $main-bg-alabaster;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+    }
+}
+@media only screen and (max-width:768px){
+    .men-img-768{
+        display: inline-block;
+        margin-left: 39px;
+    }
+    .men-img-427{
+        display: none;
+    }
+    .men-img{
+        display: none;
+    }
+    .about-me__content{
+        width: 339px;
+        margin-left: 69px;
+    }
+}
+@media only screen and (max-width:427px){
+    .men-img-427{
+        display: inline-block;
+        margin-left: 29px;
+        position: static;
+        margin-top: 380px;
+    }
+    .men-img-768{
+        display:none;
+        margin-left: 39px;
+    }
+    .about-us-wrapper{
+        flex-direction: column;
+    }
+    .about-me__content{
+        width: 311px;
+        height: 617px;
+        margin-top: 32px;
+        margin-left: 32px;
+    }
+    .about-me{
+        margin-bottom: 115px;
+    }
+}
